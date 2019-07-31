@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #4a90e2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 20px 42px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Helvetica";
+}
+
+.header .logo {
+  width: 121px;
+  height: 24px;
+}
+
+.feed {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.feeditem {
+  background: #ffffff;
+  padding: 20px;
+  margin: 10px 0;
+  width: 700px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.133916);
+}
+
+.feeditem:first-child {
+  margin-top: 20px;
+}
+
+.feeditem .post {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.feeditem .post .userinfo {
+  display: flex;
+}
+
+.feeditem .post .userinfo .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.feeditem .post .userinfo .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.feeditem .post .userinfo .info .nome {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.feeditem .post .userinfo .info .data {
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.feeditem .post .postText {
+  font-size: 14px;
+  color: #3e3e3e;
+  margin-top: 15px;
+}
+
+.comentario {
+  margin-top: 20px;
+  display: flex;
+}
+
+.comentario .avatar {
+  width: auto;
+  max-width: 32px;
+  height: auto;
+  max-height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comentario .balao {
+  background: #eeeeee;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.comentario .balao .conteudo {
+  font-size: 13px;
+}
+
+.comentario .balao .conteudo .nome {
+  font-weight: bold;
+}
